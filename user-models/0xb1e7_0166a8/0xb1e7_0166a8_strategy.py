@@ -1,3 +1,6 @@
+# Stacking Sats Challenge
+# Write your Bitcoin accumulation strategy here
+
 def execute_strategy(usd_balance, btc_price):
     &quot;&quot;&quot;
     Implement your Bitcoin accumulation strategy.
@@ -16,4 +19,4 @@ def execute_strategy(usd_balance, btc_price):
     # Return the amount to spend
     return usd_amount_to_spend
 
-# test 1
+# Your strategy will be executed automatically
