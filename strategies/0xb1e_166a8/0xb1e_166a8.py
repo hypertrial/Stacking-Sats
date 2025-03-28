@@ -1,11 +1,11 @@
 # Strategy uploaded by: 0xb1e7e5dfd9595223a55a827f8a18fdd0680166a8
-# Timestamp: 2025-03-28T18:31:40.402Z
+# Timestamp: 2025-03-28T20:08:52.052Z
 
 # Stacking Sats Challenge
 # Write your Bitcoin accumulation strategy here
 
 def execute_strategy(usd_balance, btc_price):
-    """
+    &quot;&quot;&quot;
     Implement your Bitcoin accumulation strategy.
     
     Parameters:
@@ -14,7 +14,7 @@ def execute_strategy(usd_balance, btc_price):
     
     Returns:
     - usd_amount_to_spend: Amount of USD to spend on Bitcoin
-    """
+    &quot;&quot;&quot;
     
     # Simple example: Spend 10% of available USD balance
     usd_amount_to_spend = usd_balance * 0.1
