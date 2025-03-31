@@ -1,5 +1,5 @@
 # Stacking-Sats  
-Resources for HyperTrial’s Stacking Sats Challenge
+Resources for Hypertrial’s Stacking Sats Challenge
 
 ## 🧠 Challenge Overview  
 
