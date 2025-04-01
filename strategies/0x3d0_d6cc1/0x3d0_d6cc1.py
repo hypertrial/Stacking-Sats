@@ -1,25 +1,30 @@
 # Strategy uploaded by: 0x3d02608644cf23cba0ed5de5fc2a7f03ba7d6cc1
-# Timestamp: 2025-03-30T08:03:04.490Z
+# Timestamp: 2025-04-01T10:09:15.367Z
+# Note: This file contains a valid Python strategy. Comments and docstrings are fully supported.
 
-# Stacking Sats Challenge
-# Write your Bitcoin accumulation strategy here
-
-def execute_strategy(usd_balance, btc_price):
-    """
-    Implement your Bitcoin accumulation strategy.
+def dynamic_dca(btc_price, wallet, historical_data=None):
+    &quot;&quot;&quot;
+    This function implements a dynamic Dollar Cost Averaging strategy for Bitcoin.
     
     Parameters:
-    - usd_balance: Current USD balance
-    - btc_price: Current Bitcoin price in USD
+    - btc_price (float): Current Bitcoin price in USD
+    - wallet (dict): Current wallet balances with keys &#x27;usd&#x27; and &#x27;btc&#x27;
+    - historical_data (dict, optional): Historical price data if available
     
     Returns:
-    - usd_amount_to_spend: Amount of USD to spend on Bitcoin
-    """
+    - float: Amount of USD to convert to BTC (0-1000)
     
-    # Simple example: Spend 10% of available USD balance
-    usd_amount_to_spend = usd_balance * 0.1
+    For a full, working example of the dynamic DCA approach,
+    please refer to our GitHub tutorial:
+    https:&#x2F;&#x2F;github.com&#x2F;hypertrial&#x2F;Stacking-Sats
+    &quot;&quot;&quot;
     
-    # Return the amount to spend
-    return usd_amount_to_spend
-
-# Your strategy will be executed automatically
+    # Simple strategy: allocate $250 per week (standard DCA)
+    # This passes validation but you should replace with your own strategy
+    
+    allocation = 250.0
+    
+    # Ensure allocation is within valid range (0-1000)
+    allocation = max(0, min(allocation, 1000))
+    
+    return allocation
