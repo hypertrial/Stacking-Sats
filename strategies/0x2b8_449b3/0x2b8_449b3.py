@@ -1,25 +1,17 @@
 # Strategy uploaded by: 0x2b8c6166516426b183612b6bb63c6477c5d449b3
-# Timestamp: 2025-03-31T19:42:02.642Z
+# Timestamp: 2025-04-02T14:22:13.562Z
+# Note: This file contains a valid Python strategy. Comments and docstrings are fully supported.
 
-# Stacking Sats Challenge
-# Write your Bitcoin accumulation strategy here
-
-def execute_strategy(usd_balance, btc_price):
+def dynamic_dca():
     """
-    Implement your Bitcoin accumulation strategy.
+    This is a placeholder function for your dynamic DCA strategy.
     
-    Parameters:
-    - usd_balance: Current USD balance
-    - btc_price: Current Bitcoin price in USD
-    
-    Returns:
-    - usd_amount_to_spend: Amount of USD to spend on Bitcoin
-    """
-    
-    # Simple example: Spend 10% of available USD balance
-    usd_amount_to_spend = usd_balance * 0.1
-    
-    # Return the amount to spend
-    return usd_amount_to_spend
+    For a full, working example of the dynamic DCA approach,
+    please refer to our GitHub tutorial:
+    https://github.com/hypertrial/Stacking-Sats
 
-# Your strategy will be executed automatically
+    We strongly recommend you develop and test your code locally first.
+    Once you're ready, follow our template and paste your final strategy logic here.
+    """
+
+    pass
